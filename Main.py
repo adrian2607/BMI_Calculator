@@ -1,8 +1,7 @@
 from datetime import datetime
 
+from Calculate_BMI import calculate_bmi
 
-def calculate_bmi(weight, height):
-    return weight / (height * height)
 
 def classify_bmi(bmi):
     bmi_categories = [
