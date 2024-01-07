@@ -1,0 +1,12 @@
+2024-01-07 15:32:33: Your BMI is: 0.00 Starvation
+2024-01-07 15:33:27: Your BMI is: 0.00 Starvation
+2024-01-07 15:34:10: Your BMI is: 0.00 Starvation
+2024-01-07 15:35:33: Your BMI is: 0.00 Starvation
+2024-01-07 15:36:36: Your BMI is: 0.00 Starvation
+2024-01-07 15:37:47: Your BMI is: 0.00 Starvation
+2024-01-07 15:37:59: Your BMI is: 23.46 Your weight is okay!
+2024-01-07 15:39:11: Your BMI is: 0.00 Starvation
+2024-01-07 15:40:08: Your BMI is: 0.00 Starvation
+2024-01-07 15:41:05: Your BMI is: 0.00 Starvation
+2024-01-07 15:42:01: Your BMI is: 0.00 Starvation
+2024-01-07 15:42:07: Your BMI is: 23.46 Your weight is okay!
