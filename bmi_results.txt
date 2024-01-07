@@ -10,3 +10,4 @@
 2024-01-07 15:41:05: Your BMI is: 0.00 Starvation
 2024-01-07 15:42:01: Your BMI is: 0.00 Starvation
 2024-01-07 15:42:07: Your BMI is: 23.46 Your weight is okay!
+2024-01-07 15:58:51: Your BMI is: 24.54 Your weight is okay!

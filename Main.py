@@ -31,7 +31,7 @@ def save_to_file(data):
 def main():
     try:
         weight = float(input("Enter your weight (kg): "))
-        height = input("Enter your height (m or cm): ")
+        height = float(input("Enter your height (m): "))
 
 
     except ValueError:
