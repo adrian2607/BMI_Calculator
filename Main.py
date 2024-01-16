@@ -1,8 +1,9 @@
 from datetime import datetime
 
-from Calculator_BMI import calculate_bmi
+from Calculator_BMI import *
 
 from BMI_Classification import classify_bmi
+from Save_DB import *
 
 
 def time_and_date(current_time=datetime.now()):
@@ -30,6 +31,7 @@ def main():
 
     # Save result to file
     save_to_file(result_message)
-
+    db_saver = Save_DB()
+    db_saver.save_to_database(weight, height, bmi, classification)
 if __name__ == "__main__":
     main()
