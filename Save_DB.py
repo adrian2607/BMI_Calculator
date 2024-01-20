@@ -1,6 +1,7 @@
 from datetime import datetime
 import sqlite3
 
+
 class Save_DB:
     def __init__(self):
         self.create_connection()
@@ -29,15 +30,16 @@ class Save_DB:
         except sqlite3.Error as e:
             print(e)
 
-    def save_to_database(self, weight, height, bmi, classification):
+    def save_to_database(self, weight, height, bmi, classification, date=None):
         try:
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            if date is None:
+                date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
             cursor = self.connection.cursor()
             cursor.execute('''
                 INSERT INTO bmi_results (timestamp, weight, height, bmi, classification)
                 VALUES (?, ?, ?, ?, ?)
-            ''', (timestamp, weight, height, bmi, classification))
+            ''', (date, weight, height, bmi, classification))
 
             self.connection.commit()
             print("BMI result saved to the database.")
