@@ -25,3 +25,5 @@
 2024-01-20 15:54:14: Your BMI is: 27.15 You are overweight!
 2024-01-20 15:55:28: Your BMI is: 0.00 Starvation
 2024-01-20 15:56:18: Your BMI is: 21.61 Your weight is okay!
+2024-01-22 20:58:52: Your BMI is: 23.46 Your weight is okay!
+2024-01-22 20:59:12: Your BMI is: 24.21 Your weight is okay!

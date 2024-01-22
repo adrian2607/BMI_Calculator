@@ -2,7 +2,7 @@ from datetime import datetime
 import sqlite3
 
 
-class Save_DB:
+class DataStorage:
     def __init__(self):
         self.create_connection()
 

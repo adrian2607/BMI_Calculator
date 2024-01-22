@@ -1,7 +1,7 @@
 from datetime import datetime
 from BMI_Classification import classify_bmi
 from Calculator_BMI import calculate_bmi
-from Save_DB import *
+from DataStorage import *
 
 
 def get_time_and_date():
@@ -31,8 +31,6 @@ def get_height():
             print("Invalid input. Please enter a numeric value for height.")
 
 
-
-
 def main():
     while True:
         try:
@@ -58,7 +56,7 @@ def main():
             print(result_message)
 
             save_to_file(result_message)
-            db_saver = Save_DB()
+            db_saver = DataStorage()
             db_saver.save_to_database(weight, height, bmi, classification, current_time)
 
         except ValueError as e:
