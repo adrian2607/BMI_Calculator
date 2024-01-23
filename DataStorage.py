@@ -2,7 +2,7 @@ from datetime import datetime
 import sqlite3
 
 
-class Save_DB:
+class DataStorage:
     def __init__(self):
         self.create_connection()
 
@@ -45,3 +45,7 @@ class Save_DB:
             print("BMI result saved to the database.")
         except sqlite3.Error as e:
             print(e)
+
+    def save_to_file(self, data):
+        with open("output.txt", "a") as file:
+            file.write(data + "\n")
