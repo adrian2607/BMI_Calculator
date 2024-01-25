@@ -17,15 +17,15 @@ class RawData:
             except ValueError:
                 print("Invalid input. Please enter a numeric value for weight.")
 
-    @staticmethod
-    def get_height() -> Optional[float]:
+
+    def get_height(self) -> Optional[float]:
         while True:
             height_input = input("Enter your height in meters or centimeters, or 'q' to quit: ").strip().lower()
 
             if height_input == 'q':
                 return None
 
-            height = RawData.__parse_height_input(height_input)
+            height = self.__parse_height_input(height_input)
             if height is not None and height > 0:
                 return height
             print("Invalid input. Please enter a positive, non-zero value for height.")
