@@ -1,6 +1,9 @@
 from datetime import datetime
 import sqlite3
+from typing import Optional
 
+def get_time_and_date() -> str:
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 class DataStorage:
     def __init__(self):
@@ -30,7 +33,7 @@ class DataStorage:
         except sqlite3.Error as e:
             print(e)
 
-    def save_to_database(self, weight, height, bmi, classification, date=None):
+    def save_to_database(self, weight: float, height: float, bmi: float, classification: str, date: Optional[str] = None) -> None:
         try:
             if date is None:
                 date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -46,6 +49,6 @@ class DataStorage:
         except sqlite3.Error as e:
             print(e)
 
-    def save_to_file(self, data):
-        with open("output.txt", "a") as file:
+    def save_to_file(self, data: str) -> None:
+        with open("bmi_results.txt", "a") as file:
             file.write(data + "\n")
