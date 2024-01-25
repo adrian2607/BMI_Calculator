@@ -1,6 +1,7 @@
 from datetime import datetime
 from DataStorage import *
-from bmi_calculatorpy import *
+from bmi_calculator import *
+from raw_data import *
 
 
 def main():
