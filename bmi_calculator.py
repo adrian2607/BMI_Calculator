@@ -1,5 +1,6 @@
 from typing import Optional, Union, Tuple
 
+
 class BMICalculator:
     def calculate_bmi(self, weight: float, height: float) -> float:
         return weight / (height * height)
@@ -19,5 +20,3 @@ class BMICalculator:
             if range_start <= bmi <= range_end:
                 return category
         return "BMI out of range"
-
-

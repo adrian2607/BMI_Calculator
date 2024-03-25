@@ -1,19 +1,20 @@
-from datetime import datetime
+from datetime import *
 from DataStorage import *
 from bmi_calculator import *
 from raw_data import *
 
 
 def main():
+    raw_data = RawData()
     bmi_calculator = BMICalculator()
     data_storage = DataStorage()
 
     while True:
-        weight = get_weight()
+        weight = raw_data.get_weight()
         if weight is None:
             break
 
-        height = get_height()
+        height = raw_data.get_height()
         if height is None:
             break
 
